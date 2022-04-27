@@ -1,0 +1,361 @@
+html { overflow-x: hidden; }
+
+
+header {
+    /* background-color: rgb(133, 165, 27); */
+    
+    width: 100%;
+
+    padding: 50px 0;
+
+
+}
+
+#logo-img {
+    padding: 0 10px 0 10px;
+    margin: 0 
+}
+
+#ul-nav {
+      display: flex;
+    flex-direction: row;
+    
+    
+   list-style: none;
+   display: flex;
+    
+    
+    
+}
+
+.nav-items-group {
+    /* width: 200px; */
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 100px;
+}
+
+.nav-select {
+    margin: 0 20px;
+   
+    
+}
+
+#hero-img {
+    background-image:url("./imgs/johann-walter-bantz-HG1pkXN7SVA-unsplash.jpg") ;
+    background-size: cover;
+    /* opacity: 50%; */
+    
+
+}
+
+#unit-one-text {
+    height: 800px;
+    padding: 0 0 0 50px;
+}
+
+#unit-one-header-big {
+    
+    font-size: 70px;
+    padding: 100px 0 0 0;
+}
+
+
+/* #unit-one-header-small {
+   
+} */
+
+#unit-one-social-icons {
+    padding: 20px 0 0 0;
+} */
+
+
+#unit-two {
+    
+    background-color: green;
+    
+}
+
+
+
+#unit-two-header {
+    text-align: center;
+    /* background-color: purple; */
+    height: 400px;
+
+    padding: 200px 100px;
+    
+}
+
+#unit-two-title {
+    font-size: 50px;
+    
+} 
+
+#unit-three {
+ 
+    /* background: rgb(23, 57, 118); */
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    /* flex-grow: 2; */
+}
+
+
+#unit-three-side-l {
+    width: 50%;
+    /* background-color: orange; */
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+#unit-three-side-r {
+    width: 50%;
+    /* background-color: red; */
+}
+
+#unit-three-img {
+    height: 400px;
+}
+
+#unit-three-half {
+ 
+    /* background: rgb(23, 57, 118); */
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    /* flex-grow: 2; */
+}
+
+#unit-three-half-side-l {
+    width: 50%;
+    /* background-color: orange; */
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+#unit-three-half-side-r {
+    width: 50%;
+    /* background-color: red; */
+}
+
+#unit-three-half-img {
+    height: 400px;
+}
+
+
+#unit-four {
+    /* background-color: green; */
+    justify-content: center;
+
+    padding: 200px;
+    
+
+}
+
+#unit-four > ul {
+
+    padding: 20px 0 20px 0;
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    
+    /* background: purple; */
+    
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+
+}
+
+#unit-five-header {
+    /* background: green; */
+    height: 200px;
+}
+
+#unit-five-header h1 {
+    font-size: 40px;
+}
+
+.unit-five-date {
+    font-size: 20px;
+}
+
+
+#unit-five {
+    /* padding: 30px 0 0 0; */
+    /* background: rgb(130, 112, 9); */
+    background: rgb(239, 240, 242);
+    text-align: center;
+    
+}
+
+#unit-five-body-mid {
+    display: flex;
+    background: rgb(239, 240, 242);
+}
+
+#unit-five-body-mid li {
+    text-align:center;
+    padding: 0 20%;
+    list-style: none;
+}
+
+#free-trial-main {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    padding-bottom: 200px;
+    background: rgb(239, 240, 242);
+}
+
+#free-trial-left-side, 
+#free-trial-right-side {
+    width: 50%;
+}
+
+#free-trial-right-side {
+    padding: 100px 0
+}
+
+.unit-two-img {
+    /* padding: 0 50%; */
+    /* align-items: center; */
+
+   height: 600px;
+   width: 400px;
+
+    
+}
+
+#free-class-tag {
+    font-size: 40px;
+}
+
+
+#section-six {
+    float: left;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+    /* background: rgb(193, 87, 105); */
+
+}
+
+#section-six h4 {
+
+    margin: auto;
+    padding-top: 40px;
+    font-size: 20px;
+    /* color: blue; */
+}
+
+#section-six h2 {
+    font-size: 40px;
+}
+
+#section-six li {
+    display: inline-block;
+}
+
+
+
+
+
+
+.box {
+    padding: 0 0 10px 0;
+    height: 300px;
+    width: 300px;
+    
+}
+
+#unit-seven {
+    /* text-align: center; */
+    
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+
+#unit-seven-left,
+#unit-seven-mid,
+#unit-seven-right {
+    
+    /* background-color: rgb(25, 92, 25); */
+    /* color: red; */
+    width: 33.33%;
+    text-align: center;
+}
+
+.unit-seven-img {
+    width: 80%;
+    height: 300px;
+
+}
+
+footer {
+    height: 200px;
+    text-align: center;
+    padding: 50px 0 0 100px;
+
+    /* background: blue;
+    color: red; */
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES  */
+/* ---------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 900px) {
+    #unit-four {
+
+        /* display: flex; */
+
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        
+
+        
+    }
+}
+
+@media only screen and (max-width: 1216px) {
+
+    header {
+        background: gold;
+       
+    }
+/* 
+    #unit-four {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr ;
+    } */
+
+     #unit-four #unit-four-ul, .box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .box {
+        width: 50%;
+    }
+
+
+    }
