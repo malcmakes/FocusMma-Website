@@ -42,17 +42,23 @@ header {
 }
 
 #hero-img {
-    background-image:url("./imgs/johann-walter-bantz-HG1pkXN7SVA-unsplash.jpg") ;
+    background-image: url("./imgs/johann-walter-bantz-HG1pkXN7SVA-unsplash.jpg") ;
     background-size: cover;
-    /* opacity: 50%; */
-    
-
+    opacity: 50%;
+    position: relative;
 }
+
+
+
 
 #unit-one-text {
     height: 800px;
     padding: 0 0 0 50px;
+    color: white;
+    text-align: center;
+    
 }
+
 
 #unit-one-header-big {
     
@@ -61,19 +67,8 @@ header {
 }
 
 
-/* #unit-one-header-small {
-   
-} */
-
-#unit-one-social-icons {
-    padding: 20px 0 0 0;
-} */
-
-
 #unit-two {
-    
     background-color: green;
-    
 }
 
 
@@ -91,6 +86,11 @@ header {
     font-size: 50px;
     
 } 
+
+#unit-three-container {
+    background-color: gold;
+    padding: 0 100px;
+}
 
 #unit-three {
  
@@ -142,8 +142,12 @@ header {
 }
 
 #unit-three-half-img {
+    
     height: 400px;
+    width: 80%;
 }
+
+
 
 
 #unit-four {
@@ -238,13 +242,23 @@ header {
 
 
 #section-six {
-    float: left;
+    /* float: left; */
     height: 500px;
     width: 100%;
     text-align: center;
     padding-top: 200px;
     /* background: rgb(193, 87, 105); */
+   
 
+}
+
+#section-six-p {
+    float: right;
+    padding: 0 400px;
+}
+
+#section-six-img {
+    height: 400px;
 }
 
 #section-six h4 {
@@ -318,6 +332,51 @@ footer {
 
 /* MEDIA QUERIES  */
 /* ---------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 590px) {
+    /* *, header { */
+        /* background-color: purple; */
+    /* } */
+
+    #free-trial-main {
+        padding:  100px 0 0 0 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 80%; */
+       
+    }
+
+    .unit-two-img {
+        width: 100%;
+        padding: 100px 0 0px 0;
+    }
+
+    #free-trial-right-side {
+        
+        width: 100%;
+    }
+
+    #free-class-tag,
+    #free-class-p
+    {
+        text-align: center;
+
+    }
+
+    
+   
+   
+    
+
+
+
+    }
+
+
+
 
 
 @media only screen and (max-width: 768px) {
@@ -419,12 +478,29 @@ footer {
         flex-direction: column;
     }
 
-
-
-
-
 }
 
+/* TESTING */
+/* ------------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1230px ) {
+    * {
+        background-color: green;
+    }
+
+    #unit-three-half-img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* TESTING */
+/* ------------------------------------------- */
 
 
 
