@@ -1,9 +1,18 @@
 html { overflow-x: hidden; }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 
 header {
     width: 100%;
-    padding: 50px 0;
+    padding: 40px 0;
+
+  
+
 }
 
 #logo-img {
@@ -12,19 +21,41 @@ header {
 }
 
 #ul-nav {
-      display: flex;
-    flex-direction: row;
     
-   list-style: none;
-   display: flex;
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    justify-content: space-around;
+    /* width: 30%; */
+   
 }
 
-.nav-items-group {
-    /* width: 200px; */
+.nav-links {
+    display: flex;
+
+    
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: purple;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* .nav-items-group {
+    
     display: flex;
     justify-content: space-between;
     flex: 1 1 100px;
-}
+} */
 
 .nav-select {
     margin: 0 20px; 
@@ -53,6 +84,7 @@ header {
 
 #unit-two {
     background-color: green;
+    
 }
 
 #unit-two-header {
@@ -260,10 +292,11 @@ header {
 
 }
 
-footer {
+.footer {
     height: 200px;
     text-align: center;
-    padding: 50px 0 0 100px;
+    padding: 1200px 0 0 0 ;
+    background-color: azure;
 
     /* background: blue;
     color: red; */
@@ -303,13 +336,7 @@ footer {
 
     }
 
-
-
-
     }
-
-
-
 
 
 @media only screen and (max-width: 768px) {
@@ -317,19 +344,112 @@ footer {
     * {
         color: red
     }
-
+    
     header {
         width: 100%;
         text-align: center;
+
+        /* Moving Header */
+        z-index: 4;
+        position: sticky;
+        top: 0px;
     }
 
-    #logo-img {
-        padding: 0 0 70px 0;
+
+    /* Testing */
+    /* --------------------------------------------------------------------- */
+
+       /* body {
+           overflow: hidden;
+       }
+     */
+    
+       
+    /* #logo-img,  */
+
+     #logo-img, 
+     #free-class-button,
+     #ul-nav {
+        /* padding: 0 0 70px 0; */
+
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-evenly;
     }
 
-    #ul-nav {
-        display: inline-block;
+    #free-class-button {
+        display: none;
     }
+
+    .nav-links {
+        z-index: 3;
+        /* display: inline-block; */
+        
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+
+          
+        /* background: green; */
+        background: rgb(249, 247, 247);
+
+        transform: translateX(100%); 
+
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    
+
+    .ul-nav-active {
+        transform: translateX(0%);
+    }
+
+    .toggle .line-one {
+        transform: rotate(-45deg) translate(-5px,6px)
+    }
+    .toggle .line-two {
+        opacity: 0;
+    }
+    .toggle .line-three {    
+        transform: rotate(45deg) translate(-5px,-6px)
+
+    }
+
+    
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px)
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px)
+        }
+
+        
+
+    }
+
+    /* Testing */
+    /* --------------------------------------------------------------------- */
 
     .nav-select {
         padding: 20px 0;
@@ -418,9 +538,7 @@ footer {
 
     }
 
-    #section-six-img {
-        
-    }
+  
 
 
     #unit-seven {
@@ -457,7 +575,7 @@ footer {
 /* TESTING */
 /* ------------------------------------------- */
 
-@media screen and (min-width: 768px) and (max-width: 1230px ) {
+/* @media screen and (min-width: 768px) and (max-width: 1230px ) {
     * {
         background-color: green;
     }
@@ -472,7 +590,7 @@ footer {
 
   
 }
-
+ */
 
 
 
@@ -504,7 +622,7 @@ footer {
 @media only screen and (max-width: 1216px) {
 
     header {
-        background: gold;
+        background: rgb(249, 247, 247);
        
     }
 /* 
