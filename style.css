@@ -6,6 +6,7 @@ html { overflow-x: hidden; }
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 main {
@@ -14,6 +15,7 @@ main {
 
 img {
     opacity: 0.8;
+    filter: grayscale(100%);
 }
 
 header {
@@ -98,6 +100,7 @@ header {
     text-align: center;
     height: 400px;
     padding: 100px 100px;
+    margin: 70px 0;
 }
 
 #about-title {
@@ -109,8 +112,10 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding-top: 200px;
+    padding: 100px 0;
+   
     background: rgb(239, 240, 242);
+
 }
 
 #freetrial-left-side, 
@@ -138,7 +143,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -147,7 +152,7 @@ header {
     justify-content: center; 
     flex-direction: row-reverse;
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -177,6 +182,7 @@ header {
 /* img Gallery Section */
 #img-gallery-section {
     justify-content: center;
+    padding: 50px 0;
 }
 
 #img-gallery-ul {
@@ -202,13 +208,18 @@ header {
 
 /* Hours Section  */
 #hours-section {
+   
+  
     background: rgb(239, 240, 242);
     text-align: center;  
 }
 
 #hours-header {
     height: 100px;
+  
 }
+
+
 
 #hours-header h1 {
     font-size: 40px;
@@ -216,7 +227,10 @@ header {
 
 .hours-date {
     font-size: 20px;
+    white-space: nowrap;
 }
+
+
 
 #hours-body-mid {
     display: flex;
@@ -230,41 +244,40 @@ header {
 }
 
 /* Quote Section */
-#quote-section {
-   background: rgb(238, 237, 237);
-    width: 100%;
+.quote-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 100px 0;
     text-align: center;
-    padding: 250px 50px;
 }
 
-#quote-single {
-    width: 33.33%;
+.quote-item  {
+    padding: 30px 0;
+}
+
+.quote-buzz-words {
+    font-size: 3rem;
 
 }
 
 #quote-img {
-    height: 300px;
+    
+    height: 400px;
     border-radius: 50%;
+    padding: 0 40px;
+ 
 }
 
-#quote h4 {
-    margin: auto;
-    padding-top: 40px;
-    font-size: 20px;
-}
 
-#quote h2 {
-    font-size: 40px;
-}
+/*-----------------------------MOTIVATIONAL SECTION------------------------------------ */
 
 #motivational-section {
     height: 600px;
     width: 100%;
     display: flex;
+    padding: 0 100px;
 }
 
 #motivational-left,
@@ -278,6 +291,20 @@ header {
     width: 80%;
     height: 300px;
 }
+
+/*-----------------------------MOTIVATIONAL SECTION------------------------------------ */
+
+
+.footer-section {
+    background: rgb(237, 234, 234);
+    text-align: center;
+}
+
+
+
+
+
+
 
 /* MEDIA QUERIES */
 /* (max-width 590px) */
@@ -502,10 +529,17 @@ footer {
 
 /* (max-width: 920px) */
 @media only screen and (max-width: 920px) {
+
+
+#about-section {
+    margin: 300px 0;
+}
  
 #freetrial-section {
-    margin: 150px 0;
+    margin: 200px 0;
     width: 100%;
+
+
     }
 
 #freetrial-left-side{
@@ -558,6 +592,7 @@ footer {
 
 #motivational-section {
     padding: 100px 0;
+    margin: 300px 0;
 }
 
 }
@@ -578,5 +613,19 @@ footer {
     height: 350px;
     width: 350px; 
     }
+
+    #motivational-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 700px 0;
+
     }
+
+    /* .motivational-img {
+        width: 400px;
+        height: 400px;
+    } */
+}
 
