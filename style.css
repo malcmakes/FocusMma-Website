@@ -1,43 +1,286 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
+:root {
+    --clr-neutral-100: #FFF;
+    --clr-neutral-bkgnd:rgb(249, 247, 247);
+    --ff-primary: 'Mulish', sans-serif;
+    --ts-black: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
 
-html { overflow-x: hidden; }
+html { 
+    overflow-x: hidden; 
+}
+
 * {
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px;
+    padding: 0px; */
+
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif;   */
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400px;
+    font-size: 1.3125rem;
+
+    background-color: var(--clr-neutral-bkgnd);
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+ li a {
+    text-decoration:none;
+}
+
+a:hover {
+    background-color: rgb(120, 120, 120);
+  }
+
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    padding: 3em 0;
+}
+
+@media (min-width: 40em) {
+    header {
+        padding: 2rem 0;
+
+    }
+    section {
+        padding: 4.5rem 0;
+    }
     
 }
 
-main {
-    padding: 0 30px;
+.container, .grid-container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-header {
+    padding: 1em;
+    text-shadow: var(--ts-black);
+    
+}
+
+
+.free-class-button{
+    display: block;
+    margin: auto;
+    padding: 1em;
+}
+
+.free-trial-form {
+    border:solid black 0.1em;
+    padding: 1em;
+
+    
+}
+
+form {
+    text-align: center;
+    display: block;
+    padding: 0.5em;
+
+}
+
+.form-item {
+ 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5em;
+
+
+}
+
+
+/* Starts when below 40em */
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+    .split > * + * {
+        margin-left: 2em;
+    }  
+}
+
+.grid-container {
+    display: block;
+    margin: auto;
+
+    
+}
+
+.img-gallery-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    grid-gap: 1.2em;
+    margin: auto;
+    padding: 0;
+   
+}
+
+.extra-padding {
+    padding: 1.5em 0;
 }
 
 img {
-    opacity: 0.8;
+    display: block;
+    max-width: 100%;
+    opacity: 0.7;
     filter: grayscale(100%);
 }
 
-header {
+
+.freetrial-img {
+    max-width: 80%;
+    margin: auto;
+}
+
+.grid-img-responsive {
+    
+    /* width: 100%;
+    min-height: 100%; */
+   
+    min-height: 100%;
     width: 100%;
-    padding: 40px 0;
+    margin: auto;
 }
 
-#logo-img {
-    padding: 0 10px 0 10px;
-    margin: 0; 
+.img-responsive {
+    max-width: 100%;
 }
 
-#ul-nav {
+
+
+
+.phone-icon-img {
+    height: 3em;
+    display: block;
+    margin: auto;
+}
+
+.footer-img-icon {
+    padding: 0.5em 0;
+}
+
+.quote-buzz-words {
+    background-color: rgb(50, 49, 49);
+
+    color: var(--clr-neutral-100); 
+    text-shadow: var(--ts-black)
+
+}
+
+.quote-img {
+    max-width: 50%;
+
+    border-radius: 30%;
+
+    margin: auto;
+}
+
+.motivational-img {
+    height: 12em;
+}
+
+.motivational-border {
+    border: black 1px solid;
+}
+
+
+@media (max-width: 40em) {
+    .grid-img-responsive {
+        
+        display: block;
+        margin: auto;
+    }
+    
+
+    .motivational-img {
+
+        border: rgb(196, 192, 192) solid 2px;
+
+        margin: auto;
+        width: 18.75em;
+    }
+
+    .quote-img {
+        display: block;
+        margin: auto;
+    }
+
+   .quote-p {
+    text-align: center;
+   }
+    
+}
+
+.footer-section {
+    background-color: rgb(103, 103, 103);
+    color: var(--clr-neutral-100);
+}
+
+
+
+.ul-nav, header, .nav-links {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     list-style: none;
-    justify-content: space-around;
+
 }
 
-.nav-links {
-    display: flex;
+.nav-select {
+    padding: 0 1.2rem;
+    
 }
+
+
+.hero-section {
+    background-image: url("./imgs/johann-walter-bantz-HG1pkXN7SVA-unsplash.jpg") ;
+    background-size: cover;
+    opacity: 50%;
+    position: relative;
+
+    height: 31.25em;
+    color: var(--clr-neutral-100);
+    /* color: white; */
+
+    text-shadow: 2em;
+}
+
+ .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgb(51, 27, 230);
+    mix-blend-mode:overlay;
+} 
+
 
 .burger {
     display: none;
@@ -46,348 +289,48 @@ header {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: purple;
+    background-color: black;
     margin: 5px;
     transition: all 0.3s ease;
-}
+} 
 
-.nav-select {
-    margin: 0 20px; 
-}
-/* End of Header */
 
-/* Hero Section */
-#hero-section {
-   
-    background-image: url("./imgs/johann-walter-bantz-HG1pkXN7SVA-unsplash.jpg") ;
-    background-size: cover;
-    opacity: 50%;
-    position: relative;
-   
-}
+/* -------------------------------------------------------------------- */
+    /* (max-width: 768px) */
+ @media only screen and (max-width: 768px) {
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgb(51, 27, 230);
-    mix-blend-mode:overlay;
+    .burger {
+        z-index: 100;
+        position: fixed;
+
+       right: 0%;
+       
+        /* background: rgb(218, 219, 216); */
+        border: black 1.2px solid;
+     
+    }
+
+
+.nav-links  {
     
-}
-
-#hero-text {
-    letter-spacing: 3px;
-    height: 800px;
-    padding: 0 0 0 50px;
-    color: rgb(255, 248, 248);
-    text-align: center;
-    z-index: 10;
-    text-shadow: 2px 2px black;
-    border: 2px solid black;
-}
-
-#hero-header-big {
-    
-    font-size: 80px;
-    padding: 100px 0 0 0;
-   
-    
-}
-
-/* About Section */
-#about-section {
-    text-align: center;
-    height: 400px;
-    padding: 100px 100px;
-    margin: 70px 0;
-}
-
-#about-title {
-    font-size: 50px;
-}
-
-/* FreeTrial Section */
-#freetrial-section {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 100px 0;
-   
-    background: rgb(239, 240, 242);
-
-}
-
-#freetrial-left-side, 
-#freetrial-right-side {
-    padding: 0 56px;
-    width: 50%;
-}
-
-#freetrial-right-side {
-    padding: 150px 0
-}
-
-.freetrial-img {
-   height: 600px;
-   width: 400px;
-  
-}
-
-#freetrial-tag {
-    font-size: 40px;
-}
-
-/* Placeholder Section */
-#placeholder-unit-main {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-}
-
-#placeholder-unit-main-copy {
-     display: flex;
-    justify-content: center; 
-    flex-direction: row-reverse;
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-}
-
-#left-side, 
-#left-side-copy {
-    padding: 0 100px;
-}
-
-#left-side-copy,
-#right-side-copy {
-    display: flex;
-    justify-content: center;
-    width: 50%
-}
-
-#left-side,
-#right-side {  
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-
-.placeholder-img-one {
-    height: 300px;
-}
-
-/* img Gallery Section */
-#img-gallery-section {
-    justify-content: center;
-    padding: 50px 0;
-}
-
-#img-gallery-ul {
-   padding: 80px 40px;
-}
-
-#img-gallery-section > ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-    padding: 0 150px;
-}
-
-.box {
-    padding: 10px 0;
-    height: 350px;
-    width: 350px; 
-    padding: 5px 5px;
-}
-
-/* Hours Section  */
-#hours-section {
-   
-  
-    background: rgb(239, 240, 242);
-    text-align: center;  
-}
-
-#hours-header {
-    height: 100px;
-  
-}
-
-
-
-#hours-header h1 {
-    font-size: 40px;
-}
-
-.hours-date {
-    font-size: 20px;
-    white-space: nowrap;
-}
-
-
-
-#hours-body-mid {
-    display: flex;
-    background: rgb(239, 240, 242);
-}
-
-#hours-body-mid li {
-    text-align:center;
-    padding: 0 20%;
-    list-style: none;
-}
-
-/* Quote Section */
-.quote-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 0;
-    text-align: center;
-}
-
-.quote-item  {
-    padding: 30px 0;
-}
-
-.quote-buzz-words {
-    font-size: 3rem;
-
-}
-
-#quote-img {
-    
-    height: 400px;
-    border-radius: 50%;
-    padding: 0 40px;
- 
-}
-
-
-/*-----------------------------MOTIVATIONAL SECTION------------------------------------ */
-
-#motivational-section {
-    height: 600px;
-    width: 100%;
-    display: flex;
-    padding: 0 100px;
-}
-
-#motivational-left,
-#motivational-mid,
-#motivational-right {
-    width: 33.33%;
-    text-align: center;
-}
-
-.motivational-img {
-    width: 80%;
-    height: 300px;
-}
-
-/*-----------------------------MOTIVATIONAL SECTION------------------------------------ */
-
-
-.footer-section {
-    background: rgb(237, 234, 234);
-    text-align: center;
-}
-
-
-
-
-
-
-
-/* MEDIA QUERIES */
-/* (max-width 590px) */
-/* ---------------------------------------------------------------------------- */
-@media only screen and (max-width: 590px) {
-
-#about-section {
-     padding: 100px 50px;
-    }
-
-#freetrial-section {
-     padding:  100px 0 0 0 ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-
-.freetrial-img {
-    height: 0.5em;
-    padding: 100px 0 0px 0;
-    }
-
-#freetrial-left-side {
-    height: 50%;
-    }
-
-#freetrial-right-side {
-    width: 50%;
-    }
-
-#freetrial-tag,
-#freetrial-p
-    {
-    text-align: center;
-    }
-    }
-
-    /* (max-width: 768px)*/
-@media only screen and (max-width: 768px) {
-header {
-    width: 100%;
-    text-align: center;
-    /* Moving Header */
-    z-index: 4;
-    position: sticky;
-    top: 0px;
-    }
-
-#hero-section {
-    object-fit: cover;
-    }
-
-#logo-img, 
-#free-class-button,
-#ul-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    }
-
-#free-class-button {
-     display: none;
-    }
-.nav-links {
     z-index: 3;
-    position: absolute;
+    position: fixed;
     right: 0px;
     height: 92vh;
-    top: 8vh;
+    top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
-    background: rgb(249, 247, 247);
+
+    width: 50%;
+    
+    background: var( --clr-neutral-bkgnd);
     transform: translateX(100%); 
     transition: transform 0.5s ease-in;
     }
 
 .nav-links li {
         opacity: 0;
-
     }
 
 .burger {
@@ -420,212 +363,107 @@ header {
         }
     }
 
-.nav-select {
+/* .nav-select {
     padding: 20px 0;
-    }
-
- #free-class-button {
-    margin: 50px 0 70px 0;
-    }
-
-#hero-section {
-   
-    width: 100%;
-    background-position:center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    }
-
-.box {
-    width: 100%;
-    }
-
-#placeholder-unit-main {
-     display: flex;
-    flex-direction: column;
-    }
-
-#placeholder-unit-main-copy {
-    display: flex;
-    flex-direction: column;
-    }
-
-#placeholder-unit-main,
-#placeholder-unit-main-copy {
-    margin: 120px 0;
-    }
-
-#left-side-copy,
-#right-side-copy {
-    width: 100%;
-}
-
-#left-side,
-#right-side {
-    width: 100%;
-}
-
-#img-gallery-section {
-    margin: auto;
-    padding: 0;
-    width: 100%;
-    }
-
-#hours-section {
-     margin-top: 150px;
-    }
-
-#hours-body-mid {
-    padding: 30px 0;
-    }
-
-#quote-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
-
-#quote-single {
-    
-    width: 33.33%;
-    justify-content: center;
-    align-items: center;
-    }
-
-.motivational-res, 
-.motivational-res p, 
-.motivational-img, 
-.motivational-res h2  {
-    padding: 0 0 40px 0;
-    }
-
-#motivational-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    padding: 0;
-    }
-
-.motivational-res {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-
-.motivational-img{
-    width: 200%;
-
-    }
-
-footer {
-    display: flex;
-    flex-direction: column;
-    }
-}
-
-/* (max-width: 920px) */
-@media only screen and (max-width: 920px) {
-
-
-#about-section {
-    margin: 300px 0;
-}
- 
-#freetrial-section {
-    margin: 200px 0;
-    width: 100%;
-
-
-    }
-
-#freetrial-left-side{
-    width: 100%;
-    }
-
-#freetrial-right-side {
-     width: 75%;
-    }
-
-#img-gallery-section {
-    margin: auto;
-    padding: 0;
-    width: 100%;
-    }
-
-#placeholder-unit-main {
-    display: flex;
-    flex-direction: column;
-    }
-
-#placeholder-unit-main-copy {
-    display: flex;
-    flex-direction: column;
-    }
-
-#placeholder-unit-main,
-#placeholder-unit-main-copy {
-    margin: 120px 0;
-    }
-
-#left-side-copy,
-#right-side-copy {
-     width: 100%;
-}
-
-#left-side,
-#right-side {
-
-    width: 100%;
-}
-
-.placeholder-p {
-    padding: 30px 0;
-}
-
-#hours-section {
-    margin: 50px 0;
-}
-
-#motivational-section {
-    padding: 100px 0;
-    margin: 300px 0;
-}
-
-}
-/* (max-width: 1216px)  */
-@media only screen and (max-width: 1216px) {
-
-    header {
-     background: rgb(249, 247, 247); 
-    }
-
-#img-gallery-section #img-gallery-ul, .box {
-    display: flex;
-    flex-direction: column;
-    width: 100%;  
-    }
-
-.box {
-    height: 350px;
-    width: 350px; 
-    }
-
-    #motivational-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 700px 0;
-
-    }
-
-    /* .motivational-img {
-        width: 400px;
-        height: 400px;
     } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .nav-links {
+    display: flex;
 }
+
+
+
+
+
+/* End of Header */
+
+/* Hero Section */
+
+
+/* @media (max-width: 24.063em ) {
+  {
+        
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Section */
+
+
+
+
+/* FreeTrial Section */
+
+
+
+
+
+
+
+
+/* Placeholder Section */
+
+
+
+
+/* img Gallery Section */
+
+
+
+
+
+
+
+/* Hours Section  */
+
+   
+
+
+
+
+/* Quote Section */
+
+
+
+/*-----------------------------MOTIVATIONAL SECTION------------------------------------ */
+
+
+/*-----------------------------MOTIVATIONAL SECTION------------------------------------ */
+
+
+
+
+/* MEDIA QUERIES */
+/* (max-width 590px) */
+/* ---------------------------------------------------------------------------- */
 
